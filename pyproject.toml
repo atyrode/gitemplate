@@ -33,7 +33,7 @@ homepage = "{{ project_url }}"
 github = "https://github.com/{{ github_username }}/{{ github_repository }}"
 
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=82.0.1", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
