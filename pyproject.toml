@@ -5,7 +5,7 @@ description="{{ package_description }}"
 readme = {file = "README.md", content-type = "text/markdown" }
 requires-python = ">= 3.10"
 dependencies = [
-    "click>=8.0.0",
+    "click>=8.3.2",
     "fastapi-analytics",
     "fastapi[standard]",
     "python-dotenv",
