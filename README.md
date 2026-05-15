@@ -30,7 +30,7 @@ python template.py -i
 cd src && python -m uvicorn server.main:app --reload
 ```
 
-You can now start developping in the `src/your_package_name/main.py` file. This is the entrypoint of your service.
+You can now start developing in the `src/your_package_name/main.py` file. This is the entrypoint of your service.
 
 ## ✨ Features
 
@@ -108,7 +108,7 @@ python -m uvicorn server.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 Visit `http://localhost:8000` to see your application running!
-You can now start developping in the `src/your_package_name/main.py` file. This is the entrypoint of your service.
+You can now start developing in the `src/your_package_name/main.py` file. This is the entrypoint of your service.
 
 ## 💻 Development
 
