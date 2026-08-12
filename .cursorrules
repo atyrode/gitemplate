@@ -1,0 +1,48 @@
+# Project Guidelines
+
+## Tech Stack
+- Python 3.10+ with strict type hints
+- FastAPI for API development
+- Jinja2 for server-side rendering
+- TailwindCSS for styling
+- Pytest for testing (async support via pytest-asyncio)
+
+## Code Style & Formatting
+- Follow PEP 8, but enforce line length of 119 via Black
+- Use `isort` with black profile for import sorting
+- Docstrings must follow NumPy style
+- Type hints are mandatory for all public functions and methods
+- Avoid `Any` type unless strictly necessary
+- Use f-strings for string formatting
+
+## FastAPI & Async Patterns
+- Prefer async/await for I/O bound operations
+- Use FastAPI's `Request` and `Response` models appropriately
+- Implement rate limiting with `slowapi` where applicable
+- Keep endpoints thin; delegate logic to service layers or utility functions
+- Use Pydantic models for request/response validation
+
+## Templating & Frontend
+- Jinja2 templates should be kept minimal and semantic
+- Use TailwindCSS utility classes for styling
+- JavaScript should be vanilla ES6+, kept minimal and unobtrusive
+- Ensure templates are safe against XSS by default
+
+## Project Structure
+- `src/` contains the main application code
+- `src/server/` handles FastAPI app, routers, and configurations
+- `src/placeholder/` contains the core business logic (rename during setup)
+- `tests/` contains pytest test suite
+- Use relative imports within packages, absolute imports for external modules
+
+## Pre-commit & CI
+- All changes must pass pre-commit hooks (black, isort, pylint, etc.)
+- CI runs on Python 3.10 to 3.13
+- Ensure new code includes corresponding tests
+- Use `pytest.mark.asyncio` for async tests
+
+## General
+- Keep functions focused and single-responsibility
+- Prioritize readability and maintainability over clever code
+- Update documentation and type hints alongside code changes
+- If modifying templates, verify rendering context variables are properly passed
